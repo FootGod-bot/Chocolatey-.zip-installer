@@ -1,10 +1,11 @@
-# Chocolatey-.zip-installer instuctions
+# Chocolatey .zip Installer Instructions
 
-# Step 1: Download and install dependiencys
-Open a admin powershell window and run 
-```powershell
-Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/api/v2//ChocolateyInstall.ps1'))
-and then run ```choco install git```. The first installs chocolatey and the second installs git.
+## Step 1: Download and Install Dependencies
+Open an **Admin PowerShell** window and run:
+
+```Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/api/v2//ChocolateyInstall.ps1'))```
+```choco install git```
+The first installs chocolatey and the second installs git.
 
 # Step 2: Clone the repo
 Open a admin powershell window and use cd to move to the folder where you want to put everything.
@@ -42,8 +43,7 @@ If start menu is true, press win + r and type ```C:\ProgramData\Microsoft\Window
 2. **Add the API Key to Chocolatey**
    Open an **Admin PowerShell** and run:
 
-   ```powershell
-   choco apikey --key YOUR_API_KEY_HERE -source https://push.chocolatey.org/
+   ```choco apikey --key YOUR_API_KEY_HERE -source https://push.chocolatey.org/
 
 # Thats it
 Its that easy. Congrats!!
