@@ -29,5 +29,18 @@ Run ```choco install MyApp -s .``` Replace MyApp with the app name in your .nusp
 If startup is true, press win + r and type ```shell:startup```. Check that your shortcut was made and opens the correct thing.
 If start menu is true, press win + r and type ```C:\ProgramData\Microsoft\Windows\Start Menu\Programs``` Check that the shortcut is made and opens the correct thing.
 
+## Step 6: Push to Chocolatey Community Repo
+
+1. **Get an API Key**
+   - Go to [https://community.chocolatey.org](https://community.chocolatey.org) and log in.
+   - Click your username → **API Keys** → **Generate New Key**.
+   - Copy the key.
+
+2. **Add the API Key to Chocolatey**
+   Open an **Admin PowerShell** and run:
+
+   ```powershell
+   choco apikey --key YOUR_API_KEY_HERE -source https://push.chocolatey.org/
+
 # Thats it
 Its that easy. Congrats!!
