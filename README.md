@@ -3,7 +3,7 @@
 ## Step 1: Download and Install Dependencies
 Open an **Admin PowerShell** window and run:
 
-```Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/api/v2//ChocolateyInstall.ps1'))```
+```Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/api/v2//ChocolateyInstall.ps1'))``` and
 ```choco install git```
 The first installs chocolatey and the second installs git.
 
